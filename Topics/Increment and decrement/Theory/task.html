@@ -1,0 +1,44 @@
+<h2>Increment and decrement</h2>
+<html>
+ <head></head>
+ <body>
+  <p>In this topic, we will discuss some of the most frequently used operators in programming: <strong>increment</strong> and <strong>decrement</strong>. They exist in many languages including JavaScript. These two operators are used to concisely record the operations of increasing and decreasing the value of a variable by one. In many programming tasks, it is required to change the value this way, so knowing increment and decrement is fundamental.</p> 
+  <h2>Using ++ and -- in JavaScript</h2> 
+  <p>JavaScript has two opposite operations called <strong>increment</strong> (<code class="language-javascript">++</code>) and <strong>decrement</strong> (<code class="language-javascript">--</code>) to increase or decrease the value of a variable by one, respectively. For example:</p> 
+  <pre><code class="language-javascript">let a = 10;
+let b = 10;
+console.log(++a); // 11
+console.log(--b); // 9</code></pre> 
+  <p>The code above actually gives the same result as the code below:</p> 
+  <pre><code class="language-javascript">let a = 10;
+let b = 10;
+console.log(a + 1); // 11
+console.log(b - 1); // 9</code></pre> 
+  <h2>Prefix increment</h2> 
+  <p>Both <strong>increment</strong> and <strong>decrement </strong>operators have two forms that are very important when using the result in the current statement:</p> 
+  <ul> 
+   <li><strong>prefix </strong>(<code class="language-javascript">++n</code><strong> </strong>or<strong> </strong><code class="language-javascript">--n</code>) increases/decreases the value of a variable before it is used;</li> 
+   <li><strong>postfix</strong> (<code class="language-javascript">n++</code><strong> </strong>or<strong> </strong><code class="language-javascript">n--</code>) increases/decreases the value of a variable after it is used.</li> 
+  </ul> 
+  <p>Let's look at the prefix increment:</p> 
+  <pre><code class="language-javascript">let a = 4;
+let b = ++a;
+ 
+console.log(a); // 5
+console.log(b); // 5</code></pre> 
+  <p>In this case, the value of <code class="language-javascript">a</code> has been incremented and then assigned to <code class="language-javascript">b</code>. Thus, <code class="language-javascript">b</code> is 5.</p> 
+  <h2>Postfix increment</h2> 
+  <p>Postfix increment increases or decreases the value of a variable <em>after</em> it is used. Consider an example:</p> 
+  <pre><code class="language-javascript">let a = 4;
+let b = a++;
+
+console.log(a); // 5
+console.log(b); // 4</code></pre> 
+  <p>In JavaScript, the postfix operator has higher precedence than the assignment operator. It returns the original value of <code class="language-javascript">a</code>, not the incremented one. That's why when we assign <code class="language-javascript">a++</code> to <code class="language-javascript">b</code>, we actually assign 4, while <code class="language-javascript">a</code> itself has already been incremented. So, <code class="language-javascript">b</code> is 4 and <code class="language-javascript">a</code> is 5.</p> 
+  <p>If that's still not clear enough for you, take a look at the code:</p> 
+  <pre><code class="language-javascript">let a = 4;
+console.log(a++ + a); // 9</code></pre> 
+  <h2>Conclusion</h2> 
+  <p>JS uses two operators, increment and decrement, for shorter writing of operations that increase or decrease the variable value by one. There are prefix and postfix forms of their recording: the prefix changes the variable before using it, and the postfix changes it after. These operators are useful, but don't abuse them if you're worried about code readability. </p>
+ </body>
+</html>

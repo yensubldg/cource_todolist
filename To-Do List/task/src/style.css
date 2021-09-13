@@ -1,0 +1,7 @@
+ul,li{
+    list-style: none;
+}
+
+input[type="checkbox"]:checked + span{
+    text-decoration: line-through;
+}
